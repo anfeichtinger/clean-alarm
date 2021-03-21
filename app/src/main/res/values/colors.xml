@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="myGreen">#54D280</color>
+    <color name="myDarkGreen">#43A866</color>
+
+    <color name="myRed">#d6323a</color>
+    <color name="myDarkRed">#ab282e</color>
+
+    <color name="myBlue">#27b5f6</color>
+    <color name="myDarkBlue">#1f90c4</color>
+
+    <color name="myPurple">#8b73f4</color>
+    <color name="myDarkPurple">#6f5cc3</color>
+
+    <color name="myOrange">#ff9900</color>
+    <color name="myDarkOrange">#cc7a00</color>
+
+    <color name="white">#ffffff</color>
+</resources>

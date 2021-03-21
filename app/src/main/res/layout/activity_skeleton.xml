@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/skeletonActivityRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/myBackgroundColor"
+    tools:context=".activities.SkeletonActivity">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottomNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="24dp"
+        android:background="@drawable/bottom_navigation_shape"
+        android:elevation="5dp"
+        android:paddingVertical="8dp"
+        app:cnb_iconSize="28dp"
+        app:cnb_menuResource="@menu/bottom_navigation_bar"
+        app:cnb_orientationMode="horizontal"
+        app:cnb_textAppearance="@style/Theme.CleanAlarm.BottomNavText"
+        app:cnb_unselectedColor="?attr/myBottomNavUnselectedColor" />
+</RelativeLayout>

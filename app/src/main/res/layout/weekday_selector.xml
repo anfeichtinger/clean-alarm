@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ToggleButton
+        android:id="@+id/firstDay"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/weekday_selector_states"
+        android:foreground="?attr/actionBarItemBackground"
+        android:textOff="M"
+        android:textOn="M"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/secondDay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/secondDay"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/weekday_selector_states"
+        android:foreground="?attr/actionBarItemBackground"
+        android:textOff="T"
+        android:textOn="T"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/thirdDay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/firstDay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/thirdDay"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/weekday_selector_states"
+        android:foreground="?attr/actionBarItemBackground"
+        android:textOff="W"
+        android:textOn="W"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fourthDay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/secondDay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/fourthDay"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/weekday_selector_states"
+        android:foreground="?attr/actionBarItemBackground"
+        android:textOff="T"
+        android:textOn="T"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fifthDay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/thirdDay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/fifthDay"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/weekday_selector_states"
+        android:foreground="?attr/actionBarItemBackground"
+        android:textOff="F"
+        android:textOn="F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sixthDay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fourthDay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/sixthDay"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/weekday_selector_states"
+        android:foreground="?attr/actionBarItemBackground"
+        android:textOff="S"
+        android:textOn="S"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/seventhDay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fifthDay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/seventhDay"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/weekday_selector_states"
+        android:foreground="?attr/actionBarItemBackground"
+        android:textOff="S"
+        android:textOn="S"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sixthDay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

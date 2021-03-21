@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ds">
+        <attr name="myBackgroundColor" format="color" />
+        <attr name="myCardBackgroundColor" format="color" />
+        <attr name="myTextColor" format="color" />
+        <attr name="mySecondaryTextColor" format="color" />
+        <attr name="myHeaderTextColor" format="color" />
+        <attr name="myTintColor" format="color" />
+        <attr name="myButtonColor" format="color" />
+        <attr name="myFabColor" format="color" />
+        <attr name="myFabRippleColor" format="color" />
+        <attr name="myFabOutlineColor" format="color" />
+        <attr name="myFabShadowColor" format="color" />
+        <attr name="myBottomNavBackgroundColor" format="color" />
+        <attr name="myBottomNavUnselectedColor" format="color" />
+        <attr name="myCardElevation" format="dimension" />
+        <attr name="myFabBorderSize" format="dimension" />
+    </declare-styleable>
+</resources>

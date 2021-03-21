@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Clean Alarm</string>
+
+    <!-- Settings Strings -->
+    <string name="heading_alarm">Alarms</string>
+    <string name="heading_timer">Timer</string>
+    <string name="heading_stopwatch">Stopwatch</string>
+    <string name="heading_settings">Settings</string>
+
+    <string name="heading_add_alarm">Add Alarm</string>
+    <string name="heading_edit_alarm">Edit Alarm</string>
+
+    <string name="theme_settings_title">Theme</string>
+    <string name="theme_settings_dark_mode">Dark Mode</string>
+
+    <string name="general_settings_title">General</string>
+    <string name="general_settings_lang">Language</string>
+    <string name="general_settings_24h">Use 24 hour format</string>
+    <string name="general_settings_start_week">Start week on</string>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>German</item>
+        <item>Italian</item>
+        <item>French</item>
+    </string-array>
+
+    <string-array name="week_start">
+        <item>Sunday</item>
+        <item>Monday</item>
+    </string-array>
+
+    <string name="alarm_settings_title">Alarms</string>
+    <string name="alarm_settings_stop_after">Stop after</string>
+    <string name="alarm_settings_snooze_for">Snooze for</string>
+    <string name="alarm_settings_grad_increase">Gradually increase volume</string>
+
+    <string-array name="snooze_time">
+        <item>1 minute</item>
+        <item>3 minutes</item>
+        <item>5 minutes</item>
+        <item>7 minutes</item>
+        <item>10 minutes</item>
+    </string-array>
+
+    <string name="theme_settings_green_cd">Green Theme Switch Button</string>
+    <string name="theme_settings_blue_cd">Blue Theme Switch Button</string>
+    <string name="theme_settings_purple_cd">Purple Theme Switch Button</string>
+    <string name="theme_settings_red_cd">Red Theme Switch Button</string>
+    <string name="theme_settings_orange_cd">Orange Theme Switch Button</string>
+
+    <!-- Splash Strings -->
+    <string name="splash_screen_image_cd">Clean Alarm Logo</string>
+
+    <!-- Alarm Strings-->
+    <string name="ring_alarm_action">RING_ALARM</string>
+    <string name="snooze_alarm_action">SNOOZE_ALARM</string>
+    <string name="stop_alarm_action">STOP_ALARM</string>
+    <string name="time">%1$02d:%2$02d</string>
+    <string name="alarm_repeats_label">Repeats</string>
+</resources>

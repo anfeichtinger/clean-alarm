@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/alarmMenuItem"
+        android:icon="@drawable/ic_baseline_alarm_24"
+        android:title="@string/heading_alarm" />
+
+    <item
+        android:id="@+id/timerMenuItem"
+        android:icon="@drawable/ic_round_av_timer_24"
+        android:title="@string/heading_timer" />
+
+    <item
+        android:id="@+id/stopwatchMenuItem"
+        android:icon="@drawable/ic_round_timer_24"
+        android:title="@string/heading_stopwatch" />
+
+    <item
+        android:id="@+id/settingsMenuItem"
+        android:icon="@drawable/ic_outline_settings_24"
+        android:title="@string/heading_settings" />
+</menu>

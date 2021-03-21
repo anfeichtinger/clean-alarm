@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.factor.bouncy.BouncyNestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/myBackgroundColor"
+        android:orientation="vertical"
+        android:overScrollMode="always"
+        tools:context=".fragments.SettingsFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/myBackgroundColor"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/heading_alarm"
+                android:textColor="?attr/myHeaderTextColor"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginBottom="20dp"
+                android:text="Next alarm in 2h 32min"
+                android:textColor="?attr/mySecondaryTextColor" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/alarmRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </com.factor.bouncy.BouncyNestedScrollView>
+
+    <com.scalified.fab.ActionButton
+        android:id="@+id/alarm_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="84dp"
+        android:visibility="invisible"
+        fab:button_color="?attr/myFabColor"
+        fab:button_colorPressed="?attr/myFabColor"
+        fab:button_colorRipple="?attr/colorPrimaryVariant"
+        fab:hide_animation="@anim/fab_scale_down"
+        fab:image="@drawable/ic_round_add_36"
+        fab:image_size="28dp"
+        fab:rippleEffect_enabled="true"
+        fab:shadowResponsiveEffect_enabled="true"
+        fab:shadow_color="?attr/myFabShadowColor"
+        fab:shadow_radius="8.0dp"
+        fab:shadow_xOffset="0.5dp"
+        fab:shadow_yOffset="4dp"
+        fab:show_animation="@anim/fab_scale_up"
+        fab:stroke_color="?attr/myFabOutlineColor"
+        fab:stroke_width="?attr/myFabBorderSize"
+        fab:type="DEFAULT" />
+
+</RelativeLayout>

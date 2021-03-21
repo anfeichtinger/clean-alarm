@@ -1,0 +1,166 @@
+<resources>
+    <!-- Light/Day theme. -->
+    <style name="Theme.CleanAlarm.Day.Base" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/myGreen</item>
+        <item name="colorPrimaryVariant">@color/myDarkGreen</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">?attr/colorPrimary</item>
+        <item name="colorSecondaryVariant">?attr/colorPrimaryVariant</item>
+        <item name="colorOnSecondary">?attr/colorOnPrimary</item>
+        <!-- Customize your theme here. -->
+        <item name="myBackgroundColor">#FAFAFA</item>
+        <item name="myCardBackgroundColor">#FFFFFF</item>
+        <item name="myTextColor">#2A2A2A</item>
+        <item name="mySecondaryTextColor">#696969</item>
+        <item name="myHeaderTextColor">#E62A2A2A</item>
+        <item name="myTintColor">#000000</item>
+        <item name="myButtonColor">?attr/colorPrimary</item>
+        <item name="myFabColor">?attr/colorPrimary</item>
+        <item name="myFabRippleColor">@android:color/white</item>
+        <item name="myFabOutlineColor">?attr/myBackgroundColor</item>
+        <item name="myFabShadowColor">#4D000000</item>
+        <item name="myBottomNavBackgroundColor">#FFFFFF</item>
+        <item name="myBottomNavUnselectedColor">#5b5b5b</item>
+        <item name="myCardElevation">6dp</item>
+        <item name="myFabBorderSize">0dp</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/myBackgroundColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Additional Styles -->
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:windowBackground">?attr/myBackgroundColor</item>
+        <!-- Time Picker Style -->
+        <item name="android:timePickerDialogTheme">@style/TimePickerDialogTheme</item>
+    </style>
+
+    <!-- Dark/Night theme. -->
+    <style name="Theme.CleanAlarm.Night.Base" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/myGreen</item>
+        <item name="colorPrimaryVariant">@color/myDarkGreen</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">?attr/colorPrimary</item>
+        <item name="colorSecondaryVariant">?attr/colorPrimaryVariant</item>
+        <item name="colorOnSecondary">?attr/colorOnPrimary</item>
+        <!-- Customize your theme here. -->
+        <item name="myBackgroundColor">#000000</item>
+        <item name="myCardBackgroundColor">#191919</item>
+        <item name="myTextColor">#F0F0F0</item>
+        <item name="mySecondaryTextColor">#AFAFAF</item>
+        <item name="myHeaderTextColor">#E6F0F0F0</item>
+        <item name="myTintColor">#FFFFFF</item>
+        <item name="myButtonColor">?attr/colorPrimary</item>
+        <item name="myFabColor">?attr/myBottomNavBackgroundColor</item>
+        <item name="myFabRippleColor">?attr/colorPrimary</item>
+        <item name="myFabOutlineColor">?attr/colorPrimary</item>
+        <item name="myFabShadowColor">#00000000</item>
+        <item name="myBottomNavBackgroundColor">#292929</item>
+        <item name="myBottomNavUnselectedColor">#939393</item>
+        <item name="myCardElevation">0dp</item>
+        <item name="myFabBorderSize">3dp</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/myBackgroundColor</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <!-- Additional Styles -->
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:windowBackground">?attr/myBackgroundColor</item>
+        <!-- Time Picker Style -->
+        <item name="android:timePickerDialogTheme">@style/TimePickerDialogTheme</item>
+    </style>
+
+    <style name="Theme.CleanAlarm.Day" parent="Theme.CleanAlarm.Day.Base" />
+
+    <style name="Theme.CleanAlarm.Night" parent="Theme.CleanAlarm.Night.Base" />
+
+    <style name="Theme.CleanAlarm.BottomNavText" parent="">
+        <item name="fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TimePickerDialogTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">?attr/colorPrimary</item>
+        <item name="android:timePickerStyle">@style/TimePickerDialogStyle</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TimePickerDialogStyle" parent="@android:style/Widget.Material.Light.TimePicker">
+        <item name="colorAccent">?attr/myBackgroundColor</item>
+        <item name="colorControlActivated">?attr/colorPrimary</item>
+        <item name="android:timePickerMode">clock</item>
+        <item name="android:headerBackground">?attr/myBackgroundColor</item>
+        <item name="android:headerTimeTextAppearance">
+            @style/TextAppearance.TimePickerDialogStyle.TimeLabel
+        </item>
+        <item name="android:textColorPrimary">?attr/myTextColor</item>
+        <item name="android:textColorSecondary">?attr/myTextColor</item>
+        <item name="android:numbersSelectorColor">?attr/colorPrimary</item>
+        <item name="android:numbersBackgroundColor">?attr/myCardBackgroundColor</item>
+        <item name="android:amPmTextColor">?attr/mySecondaryTextColor</item>
+    </style>
+
+    <style name="TextAppearance.TimePickerDialogStyle.TimeLabel" parent="@android:style/TextAppearance.Material">
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Theme.CleanAlarm.SpinnerDropDownItemStyle" parent="">
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/myTextColor</item>
+    </style>
+
+    <style name="Theme.CleanAlarm.Splash" parent="Theme.CleanAlarm.Night.Base">
+        <item name="android:windowBackground">@drawable/splash_screen_background</item>
+    </style>
+
+    <style name="Theme.CleanAlarm.Day.Red" parent="Theme.CleanAlarm.Day">
+        <item name="colorPrimary">@color/myRed</item>
+        <item name="colorPrimaryVariant">@color/myDarkRed</item>
+    </style>
+
+    <style name="Theme.CleanAlarm.Night.Red" parent="Theme.CleanAlarm.Night">
+        <item name="colorPrimary">@color/myRed</item>
+        <item name="colorPrimaryVariant">@color/myDarkRed</item>
+    </style>
+
+    <style name="Theme.CleanAlarm.Day.Blue" parent="Theme.CleanAlarm.Day">
+        <item name="colorPrimary">@color/myBlue</item>
+        <item name="colorPrimaryVariant">@color/myDarkBlue</item>
+    </style>
+
+    <style name="Theme.CleanAlarm.Night.Blue" parent="Theme.CleanAlarm.Night">
+        <item name="colorPrimary">@color/myBlue</item>
+        <item name="colorPrimaryVariant">@color/myDarkBlue</item>
+    </style>
+
+    <style name="Theme.CleanAlarm.Day.Purple" parent="Theme.CleanAlarm.Day">
+        <item name="colorPrimary">@color/myPurple</item>
+        <item name="colorPrimaryVariant">@color/myDarkPurple</item>
+    </style>
+
+    <style name="Theme.CleanAlarm.Night.Purple" parent="Theme.CleanAlarm.Night">
+        <item name="colorPrimary">@color/myPurple</item>
+        <item name="colorPrimaryVariant">@color/myDarkPurple</item>
+    </style>
+
+    <style name="Theme.CleanAlarm.Day.Orange" parent="Theme.CleanAlarm.Day">
+        <item name="colorPrimary">@color/myOrange</item>
+        <item name="colorPrimaryVariant">@color/myDarkOrange</item>
+    </style>
+
+    <style name="Theme.CleanAlarm.Night.Orange" parent="Theme.CleanAlarm.Night">
+        <item name="colorPrimary">@color/myOrange</item>
+        <item name="colorPrimaryVariant">@color/myDarkOrange</item>
+    </style>
+</resources>
