@@ -9,9 +9,7 @@
 
     <!-- Your product logo - 144dp color version of your app icon -->
     <item
-        android:drawable="@drawable/ic_baseline_alarm_24"
-        android:gravity="center">
-
-    </item>
+        android:drawable="@drawable/ic_launcher_foreground"
+        android:gravity="center" />
 
 </layer-list>
